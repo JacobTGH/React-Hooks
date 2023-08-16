@@ -11,18 +11,18 @@ const Car = () => {
     setCar((previousState) => {
       return { ...previousState, color: "blue" };
     });
-    return (
-      <div>
-        <h1>My {car.brand}</h1>
-        <p>
-          It is a {car.color} {car.model} from {car.year}
-        </p>
-        <button type="button" onClick={updateColor}>
-          Blue
-        </button>
-      </div>
-    );
   };
+  return (
+    <div>
+      <h1>My {car.brand}</h1>
+      <p>
+        It is a {car.color} {car.model} from {car.year}
+      </p>
+      <button type="button" onClick={updateColor}>
+        Blue
+      </button>
+    </div>
+  );
 };
 
 export default Car;
